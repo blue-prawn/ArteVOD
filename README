@@ -1,13 +1,33 @@
-Ce petit bout de code permet de télécharger les vidéos disponibles sur le site Arte Vidéo
-make pour compiler.
+This small code sample makes it possible to download videos from the
+Arte Video web site.
 
-Un interface texte vous affiche la liste des vidéos disponibles et permet de sélectionner l'émission à télécharger.
-Exemple :
-[0]                                                                                                                                                                                                                                         
-        ARTE Journal                                                                                                                                                                                                                        
-        L'édition de 12h50 du JT d'ARTE.                                                                                                                                                                                                    
+Switch the language before to compile in the source code with:
+- For French use:
+let lang = "fr"
+- for German:
+let lang = "de"
+
+Use 'make' to compile.
+
+Dependencies:
+- rtmpdump
+- ocaml
+- findlib
+- extlib
+- xml-light
+- ocamlnet
+
+A text interface displays the list of available videos and makes it possible
+to select some program to download.
+
+Example:
+
+[0]
+        ARTE Journal
+        L'édition de 12h50 du JT d'ARTE.
 [1]
-	360° - GÉO
-	Le train du Darjeeling - Voyage insolite dans l'Himalaya, au pays du thé.
+        360° - GÉO
+        Le train du Darjeeling - Voyage insolite dans l'Himalaya, au pays du thé.
+
 Choisissez une vidéo, ou Quit ou ligne vide pour sortir :
 

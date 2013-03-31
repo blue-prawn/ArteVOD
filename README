@@ -1,7 +1,7 @@
 This small code sample makes it possible to download videos from the
 Arte Video web site.
 
-Switch the language before to compile in the source code with:
+Switch the language before to compile the source code with:
 - For French use:
 let lang = "fr"
 - for German:

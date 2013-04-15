@@ -6,6 +6,10 @@
 #require "extlib" ;;
 *)
 
+(* Code released under the MIT license:
+   http://opensource.org/licenses/MIT
+*)
+
 let lang = "de"  (* German language *)
 let lang = "fr"  (* French language *)
 

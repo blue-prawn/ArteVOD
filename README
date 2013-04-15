@@ -1,6 +1,9 @@
 This small code sample makes it possible to download videos from the
 Arte Video web site.
 
+It's released under the MIT license:
+http://opensource.org/licenses/MIT
+
 Switch the language before to compile the source code with:
 - For French use:
 let lang = "fr"

@@ -198,10 +198,11 @@ let dump_by_number num =
   let title      = replace (List.nth video_list num).title ~pattern:"['/]" ~by:" " in
   let url_rtmp   = get_url_rtmp_par_numero num in
   print_endline ("Téléchargement de " ^ title);
-  (*
-  exec_command ("rtmpdump  -e -r '" ^ url_rtmp ^ "' -o '" ^ title ^ ".flv'")
-  *)
-  exec_command ("rtmpdump  -e -r '" ^ url_rtmp ^ "' | mplayer -")
+  try
+    let video_player = Unix.getenv "VIDEO_PLAYER" in
+    exec_command ("rtmpdump  -e -r '" ^ url_rtmp ^ "' | " ^ video_player ^ " -")
+  with Not_found ->
+    exec_command ("rtmpdump  -e -r '" ^ url_rtmp ^ "' -o '" ^ title ^ ".flv'")
 
 
 let dl = dump_by_number ;;

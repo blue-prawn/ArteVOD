@@ -20,7 +20,7 @@ Dependencies:
 - xml-light
 - ocamlnet
 
-By default the videos will downloaded. If you want to read it streaming
+By default the videos will be downloaded. If you want to read it streaming
 then define the env var VIDEO_PLAYER with the video player you want to use,
 example:
   $ export VIDEO_PLAYER='mplayer'
